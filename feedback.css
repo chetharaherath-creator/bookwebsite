@@ -1,0 +1,76 @@
+.feedback-banner {
+  background-color: #D9F0D3;
+  padding: 80px 20px;
+  text-align: center;
+  
+}
+
+.feedback-banner h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #12452f;
+  font-weight: 700;
+}
+
+.feedback-banner p {
+  margin-top: 8px;
+  color: #355a43;
+}
+
+.feedback-page {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.feedback-box {
+  background-color: #FFF7EB;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-box input,
+.feedback-box textarea {
+  padding: 14px;
+  font-size: 1rem;
+}
+
+.feedback-box textarea {
+  min-height: 80px;
+}
+
+.big-btn {
+  padding: 14px;
+}
+
+.feedback-result {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #D9F0D3;
+  border-radius: 8px;
+  display: none;
+}
+
+/* FAQ */
+.faq-item {
+  margin-top: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 12px;
+  background-color: #D9F0D3;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-answer {
+  padding: 12px;
+  background-color: #F5F5F5;
+  display: none;
+}

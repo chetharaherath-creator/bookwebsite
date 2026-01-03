@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="manifest" href="manifest.json">
+
+  <meta charset="UTF-8">
+  <title>Readify | Home</title>
+
+  <!-- Small icon in browser tab -->
+  <link rel="icon" type="image/png" href="image/icon.png">
+
+  <!-- Simple manifest for PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Pretty heading font -->
+   
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Responsive on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <div class="logo">Readify</div>
+
+      <!-- Hamburger button for mobile -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-line"></span>
+        <span class="nav-line"></span>
+        <span class="nav-line"></span>
+      </button>
+      
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="book-explorer.html">Books</a></li>
+        <li><a href="progress.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="reading-flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO: text left, image right -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-tagline">WELCOME TO READIFY</p>
+
+        <h1>Crafting Engaging Stories</h1>
+
+        <p class="hero-subtitle">
+          Discover book recommendations, track your reading, and find your next favourite story.
+        </p>
+
+        <!-- Auto-rotating quote (changes with JS) -->
+        <p id="rotating-quote" class="rotating-quote">Loading quote...</p>
+
+        <!-- Author of the Day (in hero, as assignment says) -->
+        <p id="author-of-day" class="hero-author-day">Author of the Day: Loading...</p>
+
+        <!-- Button UNDER author of the day -->
+        <a href="book-explorer.html" class="btn-primary">Explore Books</a>
+      </div>
+
+      <div class="hero-image">
+        <!-- change this path if your image is elsewhere -->
+        <img src="image/8.jpg" alt="Person reading and writing at a desk">
+      </div>
+    </section>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+
+    <!-- MY LATEST BOOKS -->
+    <section class="latest-books">
+      <h2>My Latest Books</h2>
+
+      <div class="books-grid">
+        <article class="book-card">
+          <div class="book-cover">
+            <img src="image/10.jpg" alt="Sahara book cover">
+          </div>
+          <h3>SAHARA</h3>
+          <p>4 Seasons, 4 Photographers</p>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover">
+            <img src="image/16.jpg" alt="Notebook book cover">
+          </div>
+          <h3>The Notebook</h3>
+          <p>A timeless love story about fate and devotion</p>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover">
+            <img src="image/11.jpg" alt="Bridgerton cover">
+          </div>
+          <h3>Bridgerton</h3>
+          <p>A Regency era romance filled with secrets</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FULL-WIDTH IMAGE BANNER -->
+    <section class="author-banner-section">
+      <img src="image/4.jpg" alt="Books and a cosy reading corner">
+    </section>
+
+    <!-- ABOUT SECTION: image left, text right -->
+    <section class="about-section">
+      <div class="about-image">
+        <img src="image/7.jpg" alt="Vintage typewriter on a table">
+      </div>
+
+      <div class="about-text">
+        <h2>About Readify</h2>
+        <p>
+          Readify is your simple companion for finding good books.
+          You can explore recommendations, save favourites, and gently track your reading progress
+          without any complicated features.
+        </p>
+        <p>
+          Whether you love fiction, fantasy, or self-help, Readify helps you keep all your book ideas
+          in one calm, cosy place.
+        </p>
+
+        <a href="book-explorer.html" class="btn-secondary">Start Exploring</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-left">
+      <h3>Readify</h3>
+      <p>Simple, calm book recommendations and reading tools.</p>
+      <p>Negombo, Sri Lanka</p>
+    </div>
+
+    <div class="footer-right">
+      <h4>Connect with Readify</h4>
+
+      <form class="newsletter-form">
+        <label for="newsletter-email">Email</label>
+        <input id="newsletter-email" type="email" placeholder="you@example.com" required>
+
+        <div class="newsletter-checkbox">
+          <input id="newsletter-consent" type="checkbox">
+          <label for="newsletter-consent">Yes, subscribe me to your newsletter.</label>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

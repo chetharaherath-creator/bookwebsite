@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Readify | Recommender</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image/icon.png">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="recommender.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header">
+  <nav class="nav">
+    <div class="logo">Readify</div>
+
+    <!-- Mobile hamburger -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="nav-line"></span>
+      <span class="nav-line"></span>
+      <span class="nav-line"></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book-explorer.html">Books</a></li>
+      <li><a href="progress.html">Tracker</a></li>
+      <li><a href="recommender.html" class="active">Recommender</a></li>
+      <li><a href="reading-flow.html">Reading Flow</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= PAGE BANNER ================= -->
+<section class="recommender-banner">
+  <h1>Random Book Recommender</h1>
+  <p>Let us choose your next read.</p>
+</section>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="recommender-page">
+
+  <div class="recommender-box">
+
+    <!-- Genre select -->
+    <label for="genreSelect">Genre</label>
+    <select id="genreSelect">
+      <option value="all">All</option>
+      <option value="fiction">Fiction</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="romance">Romance</option>
+      <option value="travel">Travel</option>
+      <option value="selfhelp">Self-help</option>
+      <option value="reference">Reference</option>
+    </select>
+
+    <!-- Length select -->
+    <label for="lengthSelect">Length</label>
+    <select id="lengthSelect">
+      <option value="all">All</option>
+      <option value="short">Short</option>
+      <option value="medium">Medium</option>
+      <option value="long">Long</option>
+    </select>
+
+    <!-- Recommend button -->
+    <button id="recommendBtn" class="btn-primary big-btn">
+      Recommend
+    </button>
+
+    <!-- ===== RESULT BOX (JS writes here) ===== -->
+    <div id="recommendResult" class="recommend-result"></div>
+
+    <!-- ===== EXTRA ACTION BUTTONS (were missing) ===== -->
+    <button id="pickAgainBtn"
+            class="btn-secondary big-btn"
+            style="display:none;">
+      Pick Again
+    </button>
+
+    <button id="saveRecommendBtn"
+            class="btn-secondary big-btn"
+            style="display:none;">
+      Save to Reading List
+    </button>
+
+  </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-left">
+    <h3>Readify</h3>
+    <p>Simple, calm book recommendations and reading tools.</p>
+    <p>Negombo, Sri Lanka</p>
+  </div>
+
+  <div class="footer-right">
+    <h4>Connect with Readify</h4>
+
+    <form class="newsletter-form">
+      <label for="newsletter-email">Email</label>
+      <input id="newsletter-email" type="email" placeholder="you@example.com">
+
+      <div class="newsletter-checkbox">
+        <input id="newsletter-consent" type="checkbox">
+        <label for="newsletter-consent">
+          Yes, subscribe me to your newsletter.
+        </label>
+      </div>
+
+      <button class="btn-primary">Submit</button>
+    </form>
+  </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="script.js"></script>
+<script src="recommender.js"></script>
+
+</body>
+</html>

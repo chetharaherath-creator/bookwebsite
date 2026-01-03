@@ -1,0 +1,299 @@
+/* ===================== BASIC RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===================== GENERAL ===================== */
+body {
+  font-family: "Georgia", serif;
+  background-color: #FFF7EB;
+  color: #333333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+  font-family: "Playfair Display", serif;
+  color: #12452F;
+}
+
+/* ===================== HEADER + NAV ===================== */
+.nav {
+  background-color: #F8DCC4;
+  padding: 14px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+/* Desktop nav links */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #12452F;
+  font-size: 0.95rem;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* HIDE hamburger by default (desktop) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-line {
+  width: 22px;
+  height: 2px;
+  background-color: #12452F;
+  margin: 4px 0;
+}
+
+/* ===================== HERO SECTION ===================== */
+.hero {
+  display: flex;
+  gap: 40px;
+  padding: 40px 60px;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-tagline {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #12452F;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  max-width: 420px;
+  margin-bottom: 10px;
+}
+
+/* Rotating quote */
+.rotating-quote {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: 14px 0 16px;
+  color: #12452F;
+}
+
+/* Author of the Day bar */
+.hero-author-day {
+  background-color: #D9F0D3;
+  color: #12452F;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  display: block; /* ensures button goes under */
+}
+
+/* Hero image */
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ===================== BUTTONS ===================== */
+.btn-primary,
+.btn-secondary {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 1px solid #5C3A21;
+  background-color: #5C3A21;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #F5E3CC;
+  color: #12452F;
+}
+
+/* ===================== LATEST BOOKS ===================== */
+.latest-books {
+  padding: 50px 60px;
+  text-align: center;
+}
+
+.latest-books h2 {
+  font-size: 3.2rem;
+  margin-bottom: 32px;
+}
+
+.books-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.book-card {
+  background-color: #D9F0D3;
+  padding: 20px;
+  width: 32%;
+  border-radius: 6px;
+}
+
+.book-cover {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background-color: #CCCCCC;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ===================== FULL WIDTH BANNER ===================== */
+.author-banner-section img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/*  ABOUT SECTION  */
+.about-section {
+  background-color: #D9F0D3;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.about-text {
+  flex: 1.2;
+}
+
+.about-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+}
+
+/* FOOTER  */
+.site-footer {
+  background-color: #F8DCC4;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/*  MOBILE (HAMBURGER)  */
+
+
+@media (max-width: 768px) {
+
+  .nav {
+    padding: 14px 20px;
+  }
+
+  /* SHOW hamburger ONLY on mobile */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* hide desktop navbar */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #F8DCC4;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 6px;
+  }
+
+  /* show menu when JS adds .nav-open */
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .hero,
+  .about-section,
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .books-grid {
+    flex-direction: column;
+  }
+
+  .book-card {
+    width: 100%;
+  }
+
+  .hero-image img {
+    height: auto;
+  }
+}

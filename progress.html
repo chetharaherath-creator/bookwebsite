@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Readify | Reading Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="image/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="progress.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <div class="logo">Readify</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="nav-line"></span>
+      <span class="nav-line"></span>
+      <span class="nav-line"></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book-explorer.html">Books</a></li>
+      <li><a href="progress.html" class="active">Tracker</a></li>
+      <li><a href="recommender.html">Recommender</a></li>
+      <li><a href="reading-flow.html">Reading Flow</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="tracker-banner">
+  <h1>Reading Progress Tracker</h1>
+  <p>Track your reading progress visually.</p>
+</section>
+
+<main class="tracker-page">
+  <div class="tracker-box">
+
+    <label for="totalPages">Total pages</label>
+    <input id="totalPages" type="number">
+
+    <label for="pagesRead">Pages read</label>
+    <input id="pagesRead" type="number">
+
+    <label for="pagesPerDay">Pages per day</label>
+    <input id="pagesPerDay" type="number">
+
+    <button id="calcBtn" class="btn-primary">Calculate</button>
+    <button id="saveProgressBtn" class="btn-secondary">Save Progress</button>
+
+    <div id="trackerResult" class="result-box"></div>
+
+  </div>
+</main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-left">
+      <h3>Readify</h3>
+      <p>Simple, calm book recommendations and reading tools.</p>
+      <p>Negombo, Sri Lanka</p>
+    </div>
+
+    <div class="footer-right">
+      <h4>Connect with Readify</h4>
+
+      <form class="newsletter-form">
+        <label for="newsletter-email">Email</label>
+        <input id="newsletter-email" type="email" placeholder="you@example.com" required>
+
+        <div class="newsletter-checkbox">
+          <input id="newsletter-consent" type="checkbox">
+          <label for="newsletter-consent">Yes, subscribe me to your newsletter.</label>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

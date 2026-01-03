@@ -1,0 +1,86 @@
+.flow-banner {
+  background-color: #D9F0D3;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+
+
+.flow-banner h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #12452f;
+  font-weight: 700;
+}
+
+.flow-banner p {
+  margin-top: 8px;
+  color: #355a43;
+}
+
+.flow-page {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.flow-box {
+  background-color: #FFF7EB;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.flow-box input,
+.flow-box select {
+  padding: 14px;
+  font-size: 1rem;
+}
+
+.book-content {
+  background-color: #D9F0D3;
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #12452F;
+  display: none;
+}
+
+.flow-box ul {
+  padding-left: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .flow-page {
+    padding: 40px 15px;
+  }
+
+  .flow-box {
+    padding: 25px;
+  }
+
+  .flow-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .flow-box button {
+    width: 100%;
+  }
+
+  .flow-box input,
+  .flow-box select {
+    width: 100%;
+  }
+}
